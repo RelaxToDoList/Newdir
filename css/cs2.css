@@ -35,7 +35,10 @@ header {
   background: #f3f3f3;
   border: 1px solid #f3f3f3;
   height: 75px;
-  width: 100%; }
+  width: 100%;
+  font-size: 50px;
+  overflow: hidden;
+  font-family: Vogue, "Comic Sans MS", cursive; }
 
 .header_phrase_news {
   font-size: 35px;
@@ -66,14 +69,13 @@ a {
   cursor: pointer; }
 
 a:hover {
+  position: relative;
   color: #663399; }
 
 .img_block {
-  position: relative;
-  display: inline-block; }
+  position: absolute; }
 
 .img_wall {
-  margin-top: 77px;
   width: 1920px;
   height: 550px;
   overflow: hidden;

@@ -45,6 +45,9 @@ html,body{
     border: 1px solid rgb(243, 243, 243);
     height: 75px;
     width: 100%;
+    font-size: 50px;
+    overflow: hidden;
+    font-family: $vogueFont;
   }
 
   .header_phrase_news{
@@ -83,16 +86,16 @@ html,body{
   }
 
   a:hover{
+    position: relative;
     color:$colorSecondary;
   }
 
   .img_block{
-    position:relative;
-    display: inline-block;
+    position: absolute;
+    // display: block;
   }
 
   .img_wall{
-    margin-top: 77px;
     width: 1920px;
     height: 550px;
     overflow: hidden;
@@ -105,7 +108,6 @@ html,body{
     position: absolute;
     top: 300px;
 	  left: 650px;
-	  // width: 100%;
     background: rgba(0,0,0, 0.7);
     background-size: 1px;
     font-family: $vogueFont;
