@@ -1,5 +1,6 @@
 $colorSecondary: #663399;
 $colorMain: black;
+$vogueFont: Vogue, 'Comic Sans MS', cursive;
 
 @font-face {
     font-family: Vogue;
@@ -18,18 +19,16 @@ html,body{
   .wrapper{
     max-width:1920px;
     margin:0 auto;
-    height:100%;
+    height:0%;
   }
   .section{
     position: relative;
     height:100%;
-    // text-align:right;
-    /* display: flex;   */
   }
   .section_top{
     font-size: 50px;
     overflow: hidden;
-    font-family: Vogue, 'Comic Sans MS', cursive;
+    font-family: $vogueFont;
 
   }
   .header_phrase_one{
@@ -87,3 +86,27 @@ html,body{
     color:$colorSecondary;
   }
 
+  .img_block{
+    position:relative;
+    display: inline-block;
+  }
+
+  .img_wall{
+    margin-top: 77px;
+    width: 1920px;
+    height: 550px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .img_block_phrase{
+    font-size: 50px;
+    color:#fff;
+    position: absolute;
+    top: 300px;
+	  left: 650px;
+	  // width: 100%;
+    background: rgba(0,0,0, 0.7);
+    background-size: 1px;
+    font-family: $vogueFont;
+  }
