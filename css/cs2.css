@@ -1,13 +1,16 @@
 @font-face {
   font-family: Vogue;
   src: url(fonts/vogue.ttf); }
+.theme {
+  background: #282626; }
+
 body {
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background: #282626;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent; }
 
@@ -31,7 +34,8 @@ header {
 .header_phrase_news {
   font-size: 35px;
   text-align: center;
-  color: black; }
+  color: black;
+  margin-left: 10px; }
 
 .header_phrase_todolist {
   font-size: 35px;
@@ -77,5 +81,19 @@ a::before {
 .mycolor:focus,
 .mycolor:visited {
   color: wheat; }
+
+@media screen and (max-width: 810px) {
+  .header_phrase_news {
+    margin-top: 15px;
+    float: right; }
+
+  .header_phrase_right {
+    display: none; }
+
+  .mycolor {
+    display: none; } }
+@media screen and (max-width: 350px) {
+  .header_phrase_news {
+    display: none; } }
 
 /*# sourceMappingURL=cs2.css.map */

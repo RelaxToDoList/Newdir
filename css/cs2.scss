@@ -1,10 +1,11 @@
-$colorSecondary: #663399;
-$colorMain: black;
-$vogueFont: Vogue, 'Comic Sans MS', cursive;
+@import 'css_config';
 
 @font-face {
     font-family: Vogue;
     src: url(fonts/vogue.ttf);
+}
+.theme{
+  background: $colorTheme;
 }
 
   body{
@@ -13,14 +14,14 @@ $vogueFont: Vogue, 'Comic Sans MS', cursive;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color: #fff;
+    background:$colorTheme;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
   }
 
   .header_phrase_one{
     color: $colorMain;
-    float:left; 
+    float:left;
   }
   .header_phrase_two{
     color: gray;
@@ -41,6 +42,7 @@ $vogueFont: Vogue, 'Comic Sans MS', cursive;
       font-size: 35px;
       text-align: center;
       color: $colorMain;
+      margin-left: 10px;
   }
 
   .header_phrase_todolist {
@@ -86,6 +88,7 @@ $vogueFont: Vogue, 'Comic Sans MS', cursive;
 
   .mycolor{
     color:black;
+
   }
 
   .mycolor:hover{
@@ -96,3 +99,26 @@ $vogueFont: Vogue, 'Comic Sans MS', cursive;
   .mycolor:visited{
     color:wheat;
   }
+
+  @media screen and (max-width: 810px){
+    .header_phrase_news{
+      margin-top:15px;
+      float:right;
+    }
+
+    .header_phrase_right{
+      display:none;
+    }
+
+    .mycolor{
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 350px){
+
+  .header_phrase_news{
+    display:none;
+  }
+
+}
