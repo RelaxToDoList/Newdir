@@ -91,7 +91,7 @@
           </div>
           <div class="wp-block-content">
             <small>
-          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 16.04.2021</small>
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>16.04.2021</small>
             <h4 class="content-title">Lorem ipsum</h4>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipisg elitm Ut tincidunt purus iaculis ipsum dctum non dtum quam.</p>
             <span class="pull-left">
@@ -125,7 +125,14 @@
     let li = template.content.cloneNode(true);
 
     ul.append(li);
-    ul.append(li);
+    const ul2 = document.querySelector('ul');
+
+    const template2 = document.querySelector("#news_block1");
+
+    const span2 = template.content.querySelector("#nick-name");
+
+    let li2 = template.content.cloneNode(true);
+    ul.append(li2);
 
 </script>
 </body>

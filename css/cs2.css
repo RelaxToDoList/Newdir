@@ -82,6 +82,37 @@ a::before {
 .mycolor:visited {
   color: wheat; }
 
+.input_block {
+  background-color: white;
+  height: 1000px; }
+
+.input_block .header_text_name {
+  margin-left: 1250px; }
+
+.input_header {
+  margin-left: 1230px; }
+
+.input_block input {
+  margin-left: 1200px;
+  font-size: 30px; }
+
+.input_block textarea {
+  width: 100%;
+  max-width: 1000px;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  height: 500px;
+  margin-left: 850px; }
+
+.input_block .textarea_name {
+  margin-left: 1250px; }
+
+.input_block .textarea_name_t {
+  margin-left: 1260px; }
+
+.input_block .send {
+  margin-left: 1280px; }
+
 @media screen and (max-width: 810px) {
   .header_phrase_news {
     margin-top: 15px;

@@ -49,7 +49,11 @@
 .wp-block.property.list .wp-block-content .description {
   padding-bottom: 10px;
   border-bottom: 5px solid $whiteColor;
-  color:$whiteColor;
+  color: $whiteColor;
+}
+
+.wp-block.property.list .wp-block-content small {
+  color:white;
 }
 .ribbon.base {
   background: $colorSecondary;
@@ -87,6 +91,9 @@
 
 .nick-name {
   color:$nickNameColor;
+}
+.date_news .p{
+  color: white;
 }
 
 @media screen and (max-width: 755px){
